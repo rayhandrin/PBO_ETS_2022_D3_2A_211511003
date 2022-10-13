@@ -26,6 +26,7 @@ public class ATM {
 
    // start ATM
    public void run() {
+      // Perubahan ETS
       boolean userExited = true;
       // welcome and authenticate user; perform transactions
       while (userExited) {
@@ -38,7 +39,7 @@ public class ATM {
          performTransactions(); // user is now authenticated
          userAuthenticated = false; // reset before next ATM session
          currentAccountNumber = 0; // reset before next ATM session
-         userExited = false; // need this to exit this specific loop
+         userExited = false; // ETS - need this to exit this specific loop
          screen.displayMessageLine("\nThank you! Goodbye!");
       }
    }
